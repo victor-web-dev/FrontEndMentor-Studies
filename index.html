@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap" rel="stylesheet">
+    <title>FrontEndMentor - Studies</title>
+    <style>
+        @keyframes card-hover {
+            0% {
+                top: 0px;
+                right: 0px;
+                box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.75);
+                -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.75);
+            }
+
+            100% {
+                top: -50px;
+                right: 50px;
+                box-shadow: 50px 50px 30px 0px rgba(0, 0, 0, 0.75);
+                -webkit-box-shadow: 50px 50px 30px 0px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 50px 50px 30px 0px rgba(0, 0, 0, 0.75);
+            }
+        }
+
+        body {
+            background-color: rgba(72, 84, 96, 1.0);
+            font-family: 'Darumadrop One', cursive;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            font-size: 60px;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            position: relative;
+            width: 200px;
+            height: 220px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 1.0);
+            border-radius: 15px;
+            transition: all 0.5s ease-out;
+            z-index: 1;
+            box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.75);
+            text-decoration: none;
+            color: black;
+        }
+
+        .card img {
+            width: 180px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+
+        .card:hover {
+            z-index: 2;
+            top: -50px;
+            right: 50px;
+            box-shadow: 50px 50px 30px 0px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 50px 50px 30px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 50px 50px 30px 0px rgba(0, 0, 0, 0.75);
+            animation-name: card-hover;
+            animation-duration: 0.5s;
+            transition: animation 0.5s ease-in;
+            cursor: pointer;
+            color: rgba(30, 144, 255, 1.0);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Projects -
+            <span>S</span><span>t</span><span>u</span><span>d</span><span>i</span><span>e</span><span>s</span>
+        </h1>
+        <section class="container">
+            <a href="./qr-code-component-main/vite-project/dist/index.html" class="card">
+                <div class="">
+                    <img src="./qr-code-component-main/vite-project/Screenshot.png" alt="">
+                    <h3>Qr Code Component</h3>
+                </div>
+            </a>
+        </section>
+    </main>
+</body>
+
+</html>
