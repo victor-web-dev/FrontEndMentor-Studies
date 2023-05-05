@@ -4,6 +4,7 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/qr-code-component-main/",
   plugins: [vue()],
   server: {
     port: 3000,
