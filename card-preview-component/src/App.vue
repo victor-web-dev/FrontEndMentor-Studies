@@ -3,9 +3,7 @@ import CardComponent from './components/CardComponent.vue';
 </script>
 
 <template>
-  <main>
-    <CardComponent></CardComponent>
-  </main>
+  <CardComponent></CardComponent>
 </template>
 
 <style scoped></style>
